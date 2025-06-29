@@ -1,4 +1,23 @@
+<<<<<<< HEAD
 .import/ 
 .godot/ 
 *.tmp 
 .DS_Store 
+=======
+# Godot 4+ specific ignores
+.godot/
+.nomedia
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_credentials.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+>>>>>>> 9fe8f14476abbf64ab8ccf8b42433ec152c2a724

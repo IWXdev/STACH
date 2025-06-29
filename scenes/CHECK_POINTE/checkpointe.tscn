@@ -1,0 +1,63 @@
+[gd_scene load_steps=11 format=3 uid="uid://d4bbyoxyke4lj"]
+
+[ext_resource type="Texture2D" uid="uid://ccijpkxu3dlug" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/01.png" id="1_o7muj"]
+[ext_resource type="Script" path="res://scenes/CHECK_POINTE/checkpointe.gd" id="1_u1qfw"]
+[ext_resource type="Texture2D" uid="uid://8onpl1hmlv6k" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/02.png" id="2_xuq48"]
+[ext_resource type="Texture2D" uid="uid://c81mlnsmidruf" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/03.png" id="3_52rnp"]
+[ext_resource type="Texture2D" uid="uid://dhm862f2juukq" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/04.png" id="4_dn3oy"]
+[ext_resource type="Texture2D" uid="uid://c1ev2ujqpww62" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/05.png" id="5_8u5vj"]
+[ext_resource type="Texture2D" uid="uid://d3rycwogjqklq" path="res://assest/Treasure Hunters/Pirate Ship/Sprites/Decorations/Candle/Candle/06.png" id="6_pjowg"]
+[ext_resource type="Texture2D" uid="uid://gttt1k8he8wd" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Barrel/Idle/1.png" id="8_s0lkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1yu7"]
+size = Vector2(20, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2w0he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o7muj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_xuq48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_52rnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dn3oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8u5vj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pjowg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="checkpoint" type="Area2D"]
+script = ExtResource("1_u1qfw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_c1yu7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -15)
+sprite_frames = SubResource("SpriteFrames_2w0he")
+autoplay = "default"
+frame = 2
+frame_progress = 0.417456
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 5)
+texture = ExtResource("8_s0lkg")
+
+[node name="spawnpoint" type="Marker2D" parent="."]
+position = Vector2(24, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

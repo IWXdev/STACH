@@ -1,0 +1,141 @@
+[gd_scene load_steps=24 format=3 uid="uid://bhd4bl4676tbd"]
+
+[ext_resource type="Texture2D" uid="uid://c4nj3pjk0ngb0" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="1_01buw"]
+[ext_resource type="Script" path="res://scenes/enime/pink_star.gd" id="1_8048v"]
+[ext_resource type="Texture2D" uid="uid://b368d5e6x62h5" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="2_4rsb7"]
+[ext_resource type="Texture2D" uid="uid://dxsflvg13woy" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 01.png" id="2_kfh7w"]
+[ext_resource type="Texture2D" uid="uid://iqh5rtrhmbh6" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 02.png" id="3_0r2kr"]
+[ext_resource type="Texture2D" uid="uid://c248kyb5a2wjh" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 03.png" id="3_8yijx"]
+[ext_resource type="Texture2D" uid="uid://cfw6dtx6v3d33" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 04.png" id="4_3dyl3"]
+[ext_resource type="Texture2D" uid="uid://4nuav7qwysrc" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 03.png" id="4_7cv47"]
+[ext_resource type="Texture2D" uid="uid://cotvupgd7yv5e" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/09-Dead Hit/Dead Hit 04.png" id="5_2frbh"]
+[ext_resource type="Texture2D" uid="uid://bs04qqu50rgh5" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 05.png" id="5_s1is0"]
+[ext_resource type="Texture2D" uid="uid://bv7tf7e2jitjl" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 01.png" id="6_2bp7o"]
+[ext_resource type="Texture2D" uid="uid://dlxlqm4g60soo" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 06.png" id="6_6bb0l"]
+[ext_resource type="Texture2D" uid="uid://3tnjqnnolp5q" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 02.png" id="7_5urc2"]
+[ext_resource type="Texture2D" uid="uid://dw3ghp6xwe0ek" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 03.png" id="8_phx20"]
+[ext_resource type="Texture2D" uid="uid://b2vcurdngnt2y" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/10-Dead Ground/Dead Ground 04.png" id="9_uljla"]
+[ext_resource type="Texture2D" uid="uid://7sv1tyco55fj" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 01.png" id="10_3scfs"]
+[ext_resource type="Texture2D" uid="uid://n0vtuu0a1k4g" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 02.png" id="11_o53g1"]
+[ext_resource type="Texture2D" uid="uid://bbkced4n24o7u" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 03.png" id="12_uqqo2"]
+[ext_resource type="Texture2D" uid="uid://cl8udm3fl37cd" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/08-Hit/Hit 04.png" id="13_rsu84"]
+[ext_resource type="PackedScene" uid="uid://b53nrix6br6su" path="res://scenes/enime/healthbar.tscn" id="20_evf1l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njrus"]
+size = Vector2(22, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sinhe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_01buw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4rsb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8yijx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3dyl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s1is0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6bb0l")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kfh7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0r2kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7cv47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2frbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2bp7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5urc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_phx20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_uljla")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_3scfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o53g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uqqo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rsu84")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qw4d"]
+size = Vector2(16.4825, 21.5396)
+
+[node name="pink star" type="CharacterBody2D" groups=["enemy"]]
+scale = Vector2(1.58259, 1.53207)
+collision_layer = 2
+collision_mask = 6
+script = ExtResource("1_8048v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_njrus")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_sinhe")
+animation = &"Run"
+autoplay = "Run"
+frame = 5
+frame_progress = 0.953016
+
+[node name="hitTimer" type="Timer" parent="."]
+wait_time = 0.4
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4.17534e-07, 0.979071)
+shape = SubResource("RectangleShape2D_6qw4d")
+debug_color = Color(0.720419, 0, 0.160641, 0.42)
+
+[node name="healthbar" parent="." instance=ExtResource("20_evf1l")]
+offset_left = -10.7136
+offset_top = -18.0241
+offset_right = 121.286
+offset_bottom = 3.97593
+scale = Vector2(0.16933, 0.18081)
+max_value = 70.0
+value = 70.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="hitTimer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

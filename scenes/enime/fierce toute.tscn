@@ -1,0 +1,142 @@
+[gd_scene load_steps=24 format=3 uid="uid://cgy7me78wvo3e"]
+
+[ext_resource type="Script" path="res://scenes/enime/enemy_2.gd" id="1_m6elg"]
+[ext_resource type="Texture2D" uid="uid://dosml1qxtr43j" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 01.png" id="2_0fiqh"]
+[ext_resource type="Texture2D" uid="uid://bdpa3g2c4n748" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 02.png" id="3_lcsh2"]
+[ext_resource type="Texture2D" uid="uid://cb1u11co5cu3d" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 03.png" id="4_a8d3q"]
+[ext_resource type="Texture2D" uid="uid://mwqip8ysb1uf" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 04.png" id="5_rumut"]
+[ext_resource type="Texture2D" uid="uid://de1mlan4iinlc" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 05.png" id="6_5ao87"]
+[ext_resource type="Texture2D" uid="uid://ko34vx55f2jj" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 06.png" id="7_1pu3h"]
+[ext_resource type="Texture2D" uid="uid://brcmnibg3skae" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 01.png" id="8_3qeh4"]
+[ext_resource type="Texture2D" uid="uid://caku1lpwa3koo" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 02.png" id="9_bjj4d"]
+[ext_resource type="Texture2D" uid="uid://di1k25it2a04q" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 03.png" id="10_vyxp6"]
+[ext_resource type="Texture2D" uid="uid://bno2cef2d7w0n" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 04.png" id="11_vap52"]
+[ext_resource type="Texture2D" uid="uid://b2rwyd3jv50of" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 01.png" id="12_4hqln"]
+[ext_resource type="Texture2D" uid="uid://u3riw1hlfuee" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 01.png" id="12_o426x"]
+[ext_resource type="Texture2D" uid="uid://bkd6kw1vpvaat" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 02.png" id="13_c6g5x"]
+[ext_resource type="Texture2D" uid="uid://ddrgkjknmvjm5" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 02.png" id="13_rj8tf"]
+[ext_resource type="Texture2D" uid="uid://i0n1su051pf0" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 03.png" id="14_6i2de"]
+[ext_resource type="Texture2D" uid="uid://bsj7n37k8dgea" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 03.png" id="14_kgljo"]
+[ext_resource type="Texture2D" uid="uid://pkrmhmp2f6ea" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 04.png" id="15_oqgrq"]
+[ext_resource type="Texture2D" uid="uid://bd64ob2no0q2e" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/10-Dead Ground/Dead Ground 04.png" id="15_uvnq1"]
+[ext_resource type="PackedScene" uid="uid://b53nrix6br6su" path="res://scenes/enime/healthbar.tscn" id="16_2eoe5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4bdv"]
+size = Vector2(24.6439, 23.607)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h51tv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0fiqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lcsh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a8d3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rumut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5ao87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1pu3h")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_3qeh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bjj4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vyxp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vap52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_o426x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_c6g5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6i2de")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uvnq1")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_4hqln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rj8tf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_kgljo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_oqgrq")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmmnr"]
+size = Vector2(20, 21)
+
+[node name="fierce toute" type="CharacterBody2D" groups=["enemy"]]
+scale = Vector2(1.33907, 1.27081)
+collision_layer = 2
+collision_mask = 6
+script = ExtResource("1_m6elg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.12018, -0.7869)
+shape = SubResource("RectangleShape2D_r4bdv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_h51tv")
+animation = &"Run"
+autoplay = "Run"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -1.5)
+shape = SubResource("RectangleShape2D_xmmnr")
+debug_color = Color(0.815982, 0, 0.26534, 0.42)
+
+[node name="healthbar" parent="." instance=ExtResource("16_2eoe5")]
+offset_left = -16.0
+offset_top = -20.0
+offset_right = 114.0
+offset_bottom = 2.0
+scale = Vector2(0.253847, 0.229997)
+size_flags_horizontal = 4
+max_value = 50.0
+value = 50.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

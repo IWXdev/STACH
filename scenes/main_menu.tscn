@@ -1,0 +1,568 @@
+[gd_scene load_steps=79 format=3 uid="uid://dqi3rttxpgh8w"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_fxqha"]
+[ext_resource type="Texture2D" uid="uid://dhhl4qf1dti5h" path="res://assest/textours/1_240.png" id="2_dscp0"]
+[ext_resource type="FontFile" uid="uid://dg8i3q1u2bwsy" path="res://assest/fonts/04B_30__.TTF" id="2_tac5v"]
+[ext_resource type="PackedScene" uid="uid://c70e32ivwsj6" path="res://scenes/node/falgs/falgs.tscn" id="4_73s5y"]
+[ext_resource type="Texture2D" uid="uid://dfhyxohyxw3bk" path="res://assest/Treasure Hunters/Wood and Paper UI/Sprites/Big Banner/33.png" id="4_piaq8"]
+[ext_resource type="Texture2D" uid="uid://cg5m2lvhw84tb" path="res://assest/Treasure Hunters/Wood and Paper UI/Sprites/Big Banner/11.png" id="5_og2q2"]
+[ext_resource type="Texture2D" uid="uid://me4vcla5wrwd" path="res://assest/Treasure Hunters/Wood and Paper UI/Sprites/Big Banner/12.png" id="6_78p1w"]
+[ext_resource type="Texture2D" uid="uid://cyqvemgwmqxhi" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 01.png" id="7_poqkk"]
+[ext_resource type="FontFile" uid="uid://cr8qmv35pdjfn" path="res://assest/fonts/fonts/Blood'n Guts.ttf" id="7_rf1bh"]
+[ext_resource type="Texture2D" uid="uid://c62yh143ybws4" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 02.png" id="8_g1mpg"]
+[ext_resource type="Texture2D" uid="uid://c0txg8c7f0enm" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 03.png" id="9_4lnel"]
+[ext_resource type="Texture2D" uid="uid://bh01k3i347auy" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 04.png" id="10_uqe2n"]
+[ext_resource type="Texture2D" uid="uid://l1qdh77nslki" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 05.png" id="11_vpeoq"]
+[ext_resource type="Texture2D" uid="uid://csony2fyq4qol" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 06.png" id="12_cg236"]
+[ext_resource type="Texture2D" uid="uid://dx13bjv4jakbx" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 07.png" id="13_72hyg"]
+[ext_resource type="Texture2D" uid="uid://bfm2oio7y8c3n" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 08.png" id="14_s3hf0"]
+[ext_resource type="Texture2D" uid="uid://cuoxgi2rk1y80" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 09.png" id="15_34dv4"]
+[ext_resource type="Texture2D" uid="uid://c8fowko5n433x" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Close 10.png" id="16_b7bov"]
+[ext_resource type="Texture2D" uid="uid://b3owcqi4s4ydx" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 01.png" id="17_ls1g8"]
+[ext_resource type="Texture2D" uid="uid://cj0pc2g8ldpej" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 02.png" id="18_iwfsi"]
+[ext_resource type="Texture2D" uid="uid://bdokblwoovm68" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 03.png" id="19_0ki22"]
+[ext_resource type="Texture2D" uid="uid://bsvgfg07b35ql" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 04.png" id="20_51l8j"]
+[ext_resource type="Texture2D" uid="uid://cyeycsya13k1u" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 05.png" id="21_1c2oq"]
+[ext_resource type="Texture2D" uid="uid://cp6s2ikkpwoym" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 06.png" id="22_32fbg"]
+[ext_resource type="Texture2D" uid="uid://cwu0mbcg5mwgq" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 07.png" id="23_dq2qt"]
+[ext_resource type="Texture2D" uid="uid://dqbmbftv0d5wu" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 08.png" id="24_f4ewm"]
+[ext_resource type="Texture2D" uid="uid://wpxtjjs4uf80" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 09.png" id="25_4rius"]
+[ext_resource type="Texture2D" uid="uid://0c46357c2u3m" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Chest/Chest Open 10.png" id="26_pvpui"]
+[ext_resource type="Texture2D" uid="uid://db6m66dqkn8yv" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Platform.png" id="28_ocyn8"]
+[ext_resource type="Texture2D" uid="uid://b4ojo7mnp5nmr" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 01.png" id="29_jevd3"]
+[ext_resource type="Texture2D" uid="uid://b2hiq6vjnerf5" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 02.png" id="30_s3igu"]
+[ext_resource type="Texture2D" uid="uid://d087gpleoj8dl" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 03.png" id="31_rjk0k"]
+[ext_resource type="Texture2D" uid="uid://dwr4b5op4whwf" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 04.png" id="32_onn7c"]
+[ext_resource type="Texture2D" uid="uid://cqaba60y8m2aw" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 05.png" id="33_hnfdf"]
+[ext_resource type="Texture2D" uid="uid://b84mc3g4lnu6j" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Idle 06.png" id="34_v2s1a"]
+[ext_resource type="Texture2D" uid="uid://begnnx5m3dsws" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Turn 01.png" id="35_sephc"]
+[ext_resource type="Texture2D" uid="uid://hlby4f2jent3" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Turn 02.png" id="36_i5rdn"]
+[ext_resource type="Texture2D" uid="uid://bjkc10h21xj0y" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Turn 03.png" id="37_6lu28"]
+[ext_resource type="Texture2D" uid="uid://c6p3o6y7e8fkc" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Ship Helm/Ship Helm Turn 04.png" id="38_37cke"]
+[ext_resource type="AudioStream" uid="uid://cprsiidwfcmst" path="res://assest/sounds/biohazardsextended.ogg" id="39_2lnv1"]
+[ext_resource type="Texture2D" uid="uid://cgogvwege2pix" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="39_hvwks"]
+[ext_resource type="Texture2D" uid="uid://ba103v7brds52" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="40_hpf6e"]
+[ext_resource type="AudioStream" uid="uid://chv286jvlw301" path="res://assest/sounds/Nice Menu Select_Confirm (ver. 2) - Video Game SFX _ Free Sound Effects(MP3_160K).mp3" id="40_irdk2"]
+[ext_resource type="Texture2D" uid="uid://3twmxndrycif" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="41_bwy0p"]
+[ext_resource type="Texture2D" uid="uid://bldjgnesgmybx" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="42_o7oue"]
+[ext_resource type="Texture2D" uid="uid://dnyli6pe286q4" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="43_scu23"]
+[ext_resource type="Texture2D" uid="uid://5tsqyv8euau6" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/01.png" id="44_2f86l"]
+[ext_resource type="Texture2D" uid="uid://ubxcg67r4x70" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/02.png" id="45_k44eo"]
+[ext_resource type="Texture2D" uid="uid://d15qakctgr52y" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/03.png" id="46_c057f"]
+[ext_resource type="Texture2D" uid="uid://58oy4842c8wg" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/04.png" id="47_otg2e"]
+[ext_resource type="Texture2D" uid="uid://4qc3k5a8ba8n" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/05.png" id="48_ebmjm"]
+[ext_resource type="Texture2D" uid="uid://cccslpgwqvuwx" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/06.png" id="49_j4cdr"]
+[ext_resource type="Texture2D" uid="uid://cu2xfjathmv3s" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/07.png" id="50_ffyo3"]
+[ext_resource type="Texture2D" uid="uid://sus1buxr32a2" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/08.png" id="51_2sr8w"]
+[ext_resource type="Texture2D" uid="uid://dqyrrxsbhqu62" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/09.png" id="52_bvsuo"]
+[ext_resource type="Texture2D" uid="uid://dyt18xd6m4euk" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/10.png" id="53_igt3q"]
+[ext_resource type="Texture2D" uid="uid://dnh3bmhcgsfmu" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Big Map/Idle/11.png" id="54_yl4jd"]
+[ext_resource type="Texture2D" uid="uid://bfx7jufvp73es" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="56_ffwpe"]
+[ext_resource type="Texture2D" uid="uid://brx0s5vk7j07p" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="57_dol4i"]
+[ext_resource type="Texture2D" uid="uid://bdsavru6bq0ek" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="58_xmn20"]
+[ext_resource type="Texture2D" uid="uid://dxtvp5mynkwjw" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="59_is3bi"]
+[ext_resource type="Texture2D" uid="uid://c4m5i82f8n156" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="60_3xekd"]
+[ext_resource type="Texture2D" uid="uid://ca7bkj6suctgj" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="61_3mx14"]
+[ext_resource type="Texture2D" uid="uid://b4b53i8uy1goe" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="62_s1fql"]
+[ext_resource type="Texture2D" uid="uid://dcnfybi6gxvwt" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="63_pdmh3"]
+[ext_resource type="Texture2D" uid="uid://d03hrhvnom7e8" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="64_gjeav"]
+[ext_resource type="Texture2D" uid="uid://b2nvcafj0g6jr" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/4.png" id="65_n24q5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t3h2n"]
+texture = ExtResource("2_dscp0")
+modulate_color = Color(0.851537, 1, 0.9979, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1xqqb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a7yt4"]
+bg_color = Color(0.482523, 0.688929, 0.707888, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 6
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sb6y6"]
+bg_color = Color(0.458405, 0.458405, 0.458405, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 6
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhlkx"]
+bg_color = Color(0.870588, 0.6, 0.439216, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 15
+shadow_color = Color(0, 0.922497, 0.92876, 0.6)
+shadow_size = 2
+shadow_offset = Vector2(4, 5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bu6sd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_poqkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g1mpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4lnel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uqe2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vpeoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cg236")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_72hyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_s3hf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_34dv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b7bov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ls1g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_iwfsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0ki22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_51l8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1c2oq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_32fbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_dq2qt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_f4ewm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4rius")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_pvpui")
+}],
+"loop": true,
+"name": &"gold chest",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4mn5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_jevd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_s3igu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_rjk0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_onn7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_hnfdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_v2s1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_sephc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_i5rdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6lu28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_37cke")
+}],
+"loop": true,
+"name": &"ship",
+"speed": 6.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_71jqa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_hvwks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_hpf6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_bwy0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_o7oue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_scu23")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1heg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_2f86l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_k44eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_c057f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_otg2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ebmjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_j4cdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_ffyo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2sr8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_bvsuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_igt3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_yl4jd")
+}],
+"loop": true,
+"name": &"idel",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1hd8d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_ffwpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_dol4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_xmn20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_is3bi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_3xekd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_3mx14")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5bff"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_s1fql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_pdmh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_gjeav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_n24q5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 730.0
+offset_bottom = 428.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fxqha")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_t3h2n")
+
+[node name="banar" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -574.0
+offset_top = -17.0
+offset_right = -574.0
+offset_bottom = -17.0
+grow_horizontal = 2
+
+[node name="33" type="Sprite2D" parent="banar"]
+texture_filter = 1
+position = Vector2(576, 468)
+scale = Vector2(25, 25)
+texture = ExtResource("4_piaq8")
+
+[node name="11" type="Sprite2D" parent="banar"]
+texture_filter = 1
+position = Vector2(1050, 279)
+scale = Vector2(15, 15)
+texture = ExtResource("5_og2q2")
+
+[node name="12" type="Sprite2D" parent="banar"]
+texture_filter = 1
+position = Vector2(102, 279)
+scale = Vector2(15, 15)
+texture = ExtResource("6_78p1w")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -369.0
+offset_top = -126.0
+offset_right = 229.0
+offset_bottom = 267.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.22337, 1.13068)
+theme_override_constants/separation = 50
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 22
+theme_override_fonts/font = ExtResource("2_tac5v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xqqb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a7yt4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sb6y6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhlkx")
+text = "PLAY"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 22
+theme_override_fonts/font = ExtResource("2_tac5v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xqqb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a7yt4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sb6y6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhlkx")
+text = "ABOUT"
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 22
+theme_override_fonts/font = ExtResource("2_tac5v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xqqb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a7yt4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sb6y6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhlkx")
+text = "EXIT"
+
+[node name="STACH" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -341.0
+offset_top = 94.0
+offset_right = 573.0
+offset_bottom = 238.0
+grow_horizontal = 2
+scale = Vector2(0.745581, 1.03991)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 14
+theme_override_constants/shadow_offset_y = 8
+theme_override_fonts/font = ExtResource("7_rf1bh")
+theme_override_font_sizes/font_size = 130
+text = "S    T    A          H"
+
+[node name="C" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 136.0
+offset_top = 47.0
+offset_right = 220.0
+offset_bottom = 183.0
+grow_horizontal = 2
+scale = Vector2(0.745581, 1.03991)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 14
+theme_override_constants/shadow_offset_y = 8
+theme_override_fonts/font = ExtResource("7_rf1bh")
+theme_override_font_sizes/font_size = 130
+text = "C"
+
+[node name="objects" type="Node2D" parent="."]
+
+[node name="gold chest" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(2266, 1281)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_bu6sd")
+animation = &"gold chest"
+autoplay = "gold chest"
+frame = 9
+frame_progress = 0.624315
+
+[node name="falgs" parent="objects" instance=ExtResource("4_73s5y")]
+texture_filter = 1
+position = Vector2(100, 1282)
+scale = Vector2(3.977, 3)
+
+[node name="Platform" type="Sprite2D" parent="objects/falgs"]
+texture_filter = 1
+position = Vector2(-14.8353, 51.3333)
+scale = Vector2(0.502892, 0.666667)
+texture = ExtResource("28_ocyn8")
+
+[node name="ship" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(123, 109)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_4mn5l")
+animation = &"ship"
+autoplay = "ship"
+
+[node name="ship2" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(2446, 109)
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_4mn5l")
+animation = &"ship"
+autoplay = "ship"
+
+[node name="player" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(2494, 1282)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_71jqa")
+animation = &"idel"
+autoplay = "idel"
+
+[node name="map" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(249, 1365)
+scale = Vector2(5, 5.315)
+sprite_frames = SubResource("SpriteFrames_q1heg")
+animation = &"idel"
+autoplay = "idel"
+frame = 5
+frame_progress = 0.147993
+
+[node name="batou" type="AnimatedSprite2D" parent="objects"]
+texture_filter = 1
+position = Vector2(2366, 1384)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_1hd8d")
+autoplay = "default"
+frame_progress = 0.845234
+
+[node name="wind" type="AnimatedSprite2D" parent="objects"]
+position = Vector2(2392, 1229)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_y5bff")
+autoplay = "default"
+frame_progress = 0.115127
+
+[node name="MusicMenu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("39_2lnv1")
+volume_db = 15.0
+autoplay = true
+
+[node name="selection" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("40_irdk2")
+volume_db = 20.0
+pitch_scale = 3.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1284, 733)
+zoom = Vector2(0.75, 0.75)
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

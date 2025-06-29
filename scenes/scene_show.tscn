@@ -1,0 +1,636 @@
+[gd_scene load_steps=57 format=3 uid="uid://dmgrj6u728o28"]
+
+[ext_resource type="Script" path="res://scenes/scene_show.gd" id="1_fjeja"]
+[ext_resource type="Texture2D" uid="uid://ci6dm0e5l76lw" path="res://assest/textours/desktop-wallpaper-red-dark-pixel-art-sunset.jpg" id="1_jb8tr"]
+[ext_resource type="Texture2D" uid="uid://bfx7jufvp73es" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="2_j0dys"]
+[ext_resource type="Texture2D" uid="uid://dpkl7y102pfib" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 01.png" id="3_m1idt"]
+[ext_resource type="Texture2D" uid="uid://brx0s5vk7j07p" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="3_q54mq"]
+[ext_resource type="Texture2D" uid="uid://bdsavru6bq0ek" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="4_f40cc"]
+[ext_resource type="Texture2D" uid="uid://dxtvp5mynkwjw" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="5_3o3f0"]
+[ext_resource type="Texture2D" uid="uid://c4m5i82f8n156" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="6_8uij7"]
+[ext_resource type="Texture2D" uid="uid://ca7bkj6suctgj" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="7_pvteo"]
+[ext_resource type="AudioStream" uid="uid://dbavvqy2ngnt1" path="res://assest/sounds/cannon-firing-193247.mp3" id="7_taul3"]
+[ext_resource type="Texture2D" uid="uid://d20bc3mmu442r" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Hit/1.png" id="8_1gmkv"]
+[ext_resource type="Texture2D" uid="uid://biuev1ipl133u" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Ship/Hit/2.png" id="9_iu21c"]
+[ext_resource type="Texture2D" uid="uid://c70mgf13gt18x" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/1.png" id="10_krghf"]
+[ext_resource type="Texture2D" uid="uid://bf8lx3untllv2" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/2.png" id="11_wajej"]
+[ext_resource type="Texture2D" uid="uid://c5u2fcx6vxt8w" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water/Top/3.png" id="12_lbof4"]
+[ext_resource type="Texture2D" uid="uid://b4b53i8uy1goe" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/1.png" id="14_d5ili"]
+[ext_resource type="Texture2D" uid="uid://c77nlafcjoyd5" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/1.png" id="14_gyo2n"]
+[ext_resource type="Texture2D" uid="uid://dcnfybi6gxvwt" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/2.png" id="15_8okem"]
+[ext_resource type="Texture2D" uid="uid://bew7d5wsvchmb" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/2.png" id="15_ybv3m"]
+[ext_resource type="Texture2D" uid="uid://d03hrhvnom7e8" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Wind/3.png" id="16_6tplf"]
+[ext_resource type="Texture2D" uid="uid://vwo5u3kopg6i" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/3.png" id="16_v5b8v"]
+[ext_resource type="Texture2D" uid="uid://cya4ia0vpmtvv" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/4.png" id="17_awlxf"]
+[ext_resource type="Texture2D" uid="uid://chdvenbbmwoaw" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/No Wind/1.png" id="17_cpkyb"]
+[ext_resource type="Texture2D" uid="uid://bckjlsukyikam" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/5.png" id="18_qi4nl"]
+[ext_resource type="Texture2D" uid="uid://cmaidwjrsap8b" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/3.png" id="18_rr45a"]
+[ext_resource type="Texture2D" uid="uid://bhped41qn3ixh" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/6.png" id="19_slj80"]
+[ext_resource type="Texture2D" uid="uid://jwm4urxxf8wy" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/No Wind/2.png" id="19_t04ki"]
+[ext_resource type="Texture2D" uid="uid://bhrbor2jasers" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Sail/No Wind/3.png" id="20_53q57"]
+[ext_resource type="Texture2D" uid="uid://cf7jvkoemjaj7" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/7.png" id="20_h8x6x"]
+[ext_resource type="Texture2D" uid="uid://dcty07phrby2r" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Ship/Destroyed/1.png" id="21_sj6kk"]
+[ext_resource type="Texture2D" uid="uid://d2c1wb6xmtt2y" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/1.png" id="22_wo1db"]
+[ext_resource type="Texture2D" uid="uid://p8rdlvdipwo6" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/2.png" id="23_a87jk"]
+[ext_resource type="Texture2D" uid="uid://dmj3o8wt873df" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/3.png" id="24_cv5mx"]
+[ext_resource type="Texture2D" uid="uid://m3b0e6kckslf" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/4.png" id="25_j0y1v"]
+[ext_resource type="Texture2D" uid="uid://c15xhkda283mp" path="res://assest/Treasure Hunters/Merchant Ship/Sprites/Water/Water Splash 1/5.png" id="26_ulel5"]
+[ext_resource type="Texture2D" uid="uid://cgogvwege2pix" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="27_6jrqi"]
+[ext_resource type="Texture2D" uid="uid://ba103v7brds52" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="28_bl8ap"]
+[ext_resource type="Texture2D" uid="uid://c1ske2m7qafnk" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 02.png" id="28_xteh2"]
+[ext_resource type="Texture2D" uid="uid://bt3ols6n6anc5" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 03.png" id="29_deslp"]
+[ext_resource type="Texture2D" uid="uid://3twmxndrycif" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="29_wy73v"]
+[ext_resource type="Texture2D" uid="uid://bldjgnesgmybx" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="30_hyqe4"]
+[ext_resource type="Texture2D" uid="uid://dn24cornxp4gc" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Background/Water Reflect Big 04.png" id="30_pejtl"]
+[ext_resource type="Texture2D" uid="uid://dnyli6pe286q4" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="31_giwrt"]
+[ext_resource type="Texture2D" uid="uid://cubt03osynhiy" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 01.png" id="32_jjh3u"]
+[ext_resource type="Texture2D" uid="uid://c46sewbexihif" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 02.png" id="33_5y21o"]
+[ext_resource type="Texture2D" uid="uid://cl56isnbcnd8c" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 03.png" id="34_jbvmq"]
+[ext_resource type="Texture2D" uid="uid://bcay2u5mh66go" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/06-Hit/Hit 04.png" id="35_momq4"]
+[ext_resource type="Texture2D" uid="uid://b677b5ev6laq8" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 02.png" id="36_vmgrw"]
+[ext_resource type="Texture2D" uid="uid://bvxvxjq54r8kd" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 03.png" id="37_0v6ri"]
+[ext_resource type="Texture2D" uid="uid://clwx7cj5refhy" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 04.png" id="38_msjtp"]
+[ext_resource type="Texture2D" uid="uid://bpsnav4y60q8c" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Idle/1.png" id="46_dic2n"]
+[ext_resource type="AudioStream" uid="uid://bjmd6da634kr4" path="res://assest/sounds/ocean-waves-250310.mp3" id="53_pegk6"]
+[ext_resource type="AudioStream" uid="uid://cprsiidwfcmst" path="res://assest/sounds/biohazardsextended.ogg" id="54_i0dmd"]
+
+[sub_resource type="Animation" id="Animation_33hmf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BATOU/batou:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_j0dys")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("water:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("10_krghf")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BATOU/batou:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(65, -6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BATOU/batou/wind:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("14_d5ili")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("water/water splash:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("22_wo1db")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BATOU/batou/player:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("27_6jrqi")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BATOU/batou/player:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(40.1683, -22.2108)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BATOU/batou/wind:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(25.4491, 3.8147e-06)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Camera2D:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(647, -159)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("ball:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("46_dic2n")]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("ball:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1202, -183)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ball/effect:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("14_gyo2n")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("ball/effect:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.02258]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasModulate/background:texture")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_m1idt")]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasModulate/background:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(500, -49)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasModulate/background:scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 3)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath(".:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.0807833, 0.0807833, 0.0807833, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("canoun:playing")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("sea:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("MusicMenu:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_4encr"]
+resource_name = "scene_show"
+length = 20.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BATOU/batou:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(5, 6, 7, 7.96667, 8.93333, 10, 10.9333, 11.9, 12.9, 13.9, 14.9333, 15.9, 17, 17.51),
+"transitions": PackedFloat32Array(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1),
+"update": 1,
+"values": [ExtResource("2_j0dys"), ExtResource("3_q54mq"), ExtResource("4_f40cc"), ExtResource("5_3o3f0"), ExtResource("6_8uij7"), ExtResource("7_pvteo"), ExtResource("2_j0dys"), ExtResource("3_q54mq"), ExtResource("4_f40cc"), ExtResource("5_3o3f0"), ExtResource("6_8uij7"), ExtResource("7_pvteo"), ExtResource("8_1gmkv"), ExtResource("9_iu21c")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("water:texture")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8, 4, 4.2, 4.4, 4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7, 7.2, 7.4, 7.6, 7.8, 8, 8.2, 8.4, 8.6, 8.8, 9, 9.2, 9.4, 9.6, 9.8, 10, 10.2, 10.4, 10.6, 10.8, 11, 11.2, 11.4, 11.6, 11.8, 12, 12.2, 12.4, 12.6, 12.8, 13, 13.2, 13.4, 13.6, 13.8, 14, 14.2, 14.4, 14.6, 14.8, 15, 15.2, 15.4, 15.6, 15.8, 16, 16.2, 16.4, 16.6, 16.8, 17, 17.2, 17.4, 17.6, 17.8, 18, 18.2, 18.4, 18.6, 18.8, 19, 19.2, 19.4, 19.6, 19.8, 20),
+"transitions": PackedFloat32Array(2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2),
+"update": 1,
+"values": [ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej"), ExtResource("10_krghf"), ExtResource("12_lbof4"), ExtResource("11_wajej")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BATOU/batou:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(5, 17, 19, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(65, 2), Vector2(809.333, 2), Vector2(1034, 9), Vector2(1080, -6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BATOU/batou/wind:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(5, 11, 15, 16.5, 17, 17.5, 18.5, 19, 19.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_d5ili"), ExtResource("15_8okem"), ExtResource("16_6tplf"), ExtResource("17_cpkyb"), ExtResource("18_rr45a"), ExtResource("17_cpkyb"), ExtResource("19_t04ki"), ExtResource("20_53q57"), ExtResource("21_sj6kk")]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("water/water splash:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(5, 10, 12, 14, 16, 18),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("22_wo1db"), ExtResource("23_a87jk"), ExtResource("24_cv5mx"), ExtResource("25_j0y1v"), ExtResource("26_ulel5"), ExtResource("23_a87jk")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BATOU/batou/player:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("27_6jrqi"), ExtResource("28_bl8ap"), ExtResource("29_wy73v"), ExtResource("30_hyqe4"), ExtResource("31_giwrt"), ExtResource("27_6jrqi"), ExtResource("28_bl8ap"), ExtResource("29_wy73v"), ExtResource("30_hyqe4"), ExtResource("31_giwrt"), ExtResource("27_6jrqi"), ExtResource("28_bl8ap"), ExtResource("29_wy73v"), ExtResource("30_hyqe4"), ExtResource("31_giwrt"), ExtResource("27_6jrqi"), ExtResource("28_bl8ap"), ExtResource("29_wy73v"), ExtResource("30_hyqe4"), ExtResource("31_giwrt"), ExtResource("27_6jrqi"), ExtResource("28_bl8ap"), ExtResource("28_bl8ap"), ExtResource("29_wy73v"), ExtResource("32_jjh3u"), ExtResource("33_5y21o"), ExtResource("34_jbvmq"), ExtResource("35_momq4"), ExtResource("36_vmgrw"), ExtResource("37_0v6ri"), ExtResource("38_msjtp")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BATOU/batou/player:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(18.5, 18.8, 19, 19.4, 19.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(16.0948, -22.2108), Vector2(40.1683, -22.2108), Vector2(61.7655, -10.6225), Vector2(73.9535, 9.65685), Vector2(107.464, 60.8382)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BATOU/batou/wind:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 19, 19.5, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-18.1582, -32.8333), Vector2(-10.1796, -35.7303), Vector2(25.4491, 3.8147e-06), Vector2(49.5225, 29.9362)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Camera2D:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 8.06, 9.9, 15, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(596, -152), Vector2(69, -38), Vector2(468, -18), Vector2(772, -53), Vector2(1170, -17)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("ball:texture")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(16.47, 16.5, 17, 17.01),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [null, ExtResource("46_dic2n"), ExtResource("46_dic2n"), null]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("ball:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(16.5, 17),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1202, -183), Vector2(800, -7)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("ball/effect:texture")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(16.55, 16.6, 16.7, 16.8, 16.85, 16.9, 16.95),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_gyo2n"), ExtResource("15_ybv3m"), ExtResource("16_v5b8v"), ExtResource("17_awlxf"), ExtResource("18_qi4nl"), ExtResource("19_slj80"), ExtResource("20_h8x6x")]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("ball/effect:rotation")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(16.55),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.02258]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasModulate/background:texture")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt"), ExtResource("28_xteh2"), ExtResource("29_deslp"), ExtResource("30_pejtl"), ExtResource("3_m1idt")]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CanvasModulate/background:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(500, -30)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CanvasModulate/background:scale")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(2),
+"update": 0,
+"values": [Vector2(2.5, 2.5)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath(".:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 9.02, 19.01, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("canoun:playing")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(-0.03, 16.02, 19.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("sea:playing")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 1.01, 19.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("MusicMenu:playing")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 1.01, 19.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ni4o4"]
+_data = {
+"RESET": SubResource("Animation_33hmf"),
+"scene_show": SubResource("Animation_4encr")
+}
+
+[node name="scene show" type="Node2D"]
+modulate = Color(0.0807833, 0.0807833, 0.0807833, 1)
+script = ExtResource("1_fjeja")
+metadata/_edit_vertical_guides_ = [1213.0, 1212.0, 1212.0]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="Desktop-wallpaper-red-dark-pixel-art-sunset" type="Sprite2D" parent="CanvasModulate"]
+position = Vector2(501, 14.5)
+scale = Vector2(1.67294, 1.17782)
+texture = ExtResource("1_jb8tr")
+
+[node name="background" type="Sprite2D" parent="CanvasModulate"]
+texture_filter = 1
+position = Vector2(500, -49)
+scale = Vector2(3, 3)
+texture = ExtResource("3_m1idt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ni4o4")
+}
+autoplay = "scene_show"
+
+[node name="BATOU" type="Node2D" parent="."]
+
+[node name="batou" type="Sprite2D" parent="BATOU"]
+texture_filter = 1
+position = Vector2(65, -6)
+scale = Vector2(1.21157, 1.03553)
+texture = ExtResource("2_j0dys")
+
+[node name="wind" type="Sprite2D" parent="BATOU/batou"]
+texture_filter = 1
+position = Vector2(25.4491, 3.8147e-06)
+scale = Vector2(0.825374, 0.965685)
+texture = ExtResource("14_d5ili")
+
+[node name="player" type="Sprite2D" parent="BATOU/batou"]
+texture_filter = 1
+position = Vector2(40.1683, -22.2108)
+texture = ExtResource("27_6jrqi")
+
+[node name="water" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(501, 49.5)
+scale = Vector2(14.8125, 2.96875)
+texture = ExtResource("10_krghf")
+
+[node name="water splash" type="Sprite2D" parent="water"]
+texture = ExtResource("22_wo1db")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(647, -159)
+zoom = Vector2(4.5, 4.5)
+limit_left = 0
+limit_right = 1212
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
+
+[node name="ball" type="Sprite2D" parent="."]
+position = Vector2(1202, -183)
+texture = ExtResource("46_dic2n")
+
+[node name="effect" type="Sprite2D" parent="ball"]
+rotation = 1.02258
+texture = ExtResource("14_gyo2n")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 20.0
+
+[node name="canoun" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1199, -181)
+stream = ExtResource("7_taul3")
+volume_db = -6.783
+
+[node name="sea" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1199, -181)
+stream = ExtResource("53_pegk6")
+volume_db = -7.913
+
+[node name="MusicMenu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("54_i0dmd")
+volume_db = -15.522
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

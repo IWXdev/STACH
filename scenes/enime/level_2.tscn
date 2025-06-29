@@ -1,0 +1,113 @@
+[gd_scene load_steps=19 format=3 uid="uid://bpt3uaamonwgd"]
+
+[ext_resource type="Texture2D" uid="uid://dosml1qxtr43j" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 01.png" id="1_uqhuf"]
+[ext_resource type="Texture2D" uid="uid://bdpa3g2c4n748" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 02.png" id="2_8vjtv"]
+[ext_resource type="Texture2D" uid="uid://cb1u11co5cu3d" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 03.png" id="3_mlq3l"]
+[ext_resource type="Texture2D" uid="uid://mwqip8ysb1uf" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 04.png" id="4_8fydk"]
+[ext_resource type="Texture2D" uid="uid://de1mlan4iinlc" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 05.png" id="5_6mapw"]
+[ext_resource type="Texture2D" uid="uid://ko34vx55f2jj" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 06.png" id="6_8npoc"]
+[ext_resource type="Texture2D" uid="uid://brcmnibg3skae" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 01.png" id="7_j35gt"]
+[ext_resource type="Texture2D" uid="uid://caku1lpwa3koo" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 02.png" id="8_6qchg"]
+[ext_resource type="Texture2D" uid="uid://di1k25it2a04q" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 03.png" id="9_ejy8j"]
+[ext_resource type="Texture2D" uid="uid://bno2cef2d7w0n" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/09-Dead Hit/Dead Hit 04.png" id="10_4hppd"]
+[ext_resource type="Texture2D" uid="uid://b2rwyd3jv50of" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 01.png" id="11_d5nb2"]
+[ext_resource type="Texture2D" uid="uid://ddrgkjknmvjm5" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 02.png" id="12_g6oqe"]
+[ext_resource type="Texture2D" uid="uid://bsj7n37k8dgea" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 03.png" id="13_kj7yf"]
+[ext_resource type="Texture2D" uid="uid://pkrmhmp2f6ea" path="res://assest/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/08-Hit/Hit 04.png" id="14_41k0w"]
+[ext_resource type="PackedScene" uid="uid://b53nrix6br6su" path="res://scenes/enime/healthbar.tscn" id="15_n3sma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4bdv"]
+size = Vector2(22, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h51tv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uqhuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8vjtv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mlq3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8fydk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6mapw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8npoc")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_j35gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6qchg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ejy8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4hppd")
+}],
+"loop": false,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_d5nb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g6oqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kj7yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_41k0w")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xmmnr"]
+size = Vector2(20, 21)
+
+[node name="enemy2" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_r4bdv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_h51tv")
+animation = &"Run"
+autoplay = "Run"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -1.5)
+shape = SubResource("RectangleShape2D_xmmnr")
+debug_color = Color(0.815982, 0, 0.26534, 0.42)
+
+[node name="healthbar" parent="." instance=ExtResource("15_n3sma")]
+offset_left = -16.0
+offset_top = -20.0
+offset_right = 114.0
+offset_bottom = 2.0
+scale = Vector2(0.253847, 0.229997)
+size_flags_horizontal = 4

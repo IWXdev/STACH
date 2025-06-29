@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chv286jvlw301"
+path="res://.godot/imported/Nice Menu Select_Confirm (ver. 2) - Video Game SFX _ Free Sound Effects(MP3_160K).mp3-3feeace8ddb200f223e4c936f356cf2b.mp3str"
+
+[deps]
+
+source_file="res://assest/sounds/Nice Menu Select_Confirm (ver. 2) - Video Game SFX _ Free Sound Effects(MP3_160K).mp3"
+dest_files=["res://.godot/imported/Nice Menu Select_Confirm (ver. 2) - Video Game SFX _ Free Sound Effects(MP3_160K).mp3-3feeace8ddb200f223e4c936f356cf2b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

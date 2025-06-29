@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dba2is3uhil7"]
+
+[ext_resource type="Script" path="res://scenes/node/DeadLine/dead_line.gd" id="1_cwq31"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hcybr"]
+b = Vector2(2400, 0)
+
+[node name="DeadLine" type="Area2D"]
+script = ExtResource("1_cwq31")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_hcybr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

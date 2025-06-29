@@ -1,0 +1,410 @@
+[gd_scene load_steps=39 format=3 uid="uid://ki4utreeysno"]
+
+[ext_resource type="Texture2D" uid="uid://f43iylr5nw82" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Idle/1.png" id="1_2mo7a"]
+[ext_resource type="Script" path="res://scenes/node/shooter/cannon/cannon_shoter.gd" id="1_crrjs"]
+[ext_resource type="Texture2D" uid="uid://mpw50ect117u" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/1.png" id="2_6y1s1"]
+[ext_resource type="Texture2D" uid="uid://dr8eurvlx6mgr" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Destroyed/1.png" id="2_w7nbd"]
+[ext_resource type="Texture2D" uid="uid://bmmaa2jsei8uf" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Destroyed/2.png" id="3_dklb6"]
+[ext_resource type="Texture2D" uid="uid://d3jcve48q6y3f" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/2.png" id="3_j1mic"]
+[ext_resource type="Texture2D" uid="uid://bblltblhw80c8" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/3.png" id="4_8qd5e"]
+[ext_resource type="Texture2D" uid="uid://duy2wgcjgqi0t" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Destroyed/3.png" id="4_s50ip"]
+[ext_resource type="Texture2D" uid="uid://bjl48bfknxw6n" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/4.png" id="5_wnpvh"]
+[ext_resource type="Texture2D" uid="uid://1o77cg0jgbo3" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Destroyed/4.png" id="5_y044n"]
+[ext_resource type="Texture2D" uid="uid://mn7ulpo6hwf0" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Hit/1.png" id="6_kqd68"]
+[ext_resource type="Texture2D" uid="uid://qtkn603g1ssx" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/5.png" id="6_kyl3b"]
+[ext_resource type="Texture2D" uid="uid://cry0an618orkb" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire/6.png" id="7_5j2n2"]
+[ext_resource type="Texture2D" uid="uid://nhkjo16f7368" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Hit/2.png" id="7_vjctn"]
+[ext_resource type="Texture2D" uid="uid://dxd8elfu4lmi4" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Hit/3.png" id="8_nwxgn"]
+[ext_resource type="Texture2D" uid="uid://dfoxwltrf74o8" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire Effect/4.png" id="8_wmols"]
+[ext_resource type="Texture2D" uid="uid://dttn0khro4rwq" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire Effect/2.png" id="9_7nevt"]
+[ext_resource type="Texture2D" uid="uid://b6yx36ox6dubn" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Hit/4.png" id="9_yw1le"]
+[ext_resource type="Texture2D" uid="uid://ca0fhda3shiml" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire Effect/3.png" id="10_qk2b3"]
+[ext_resource type="Texture2D" uid="uid://cjlas78608buq" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire Effect/1.png" id="11_hub4v"]
+[ext_resource type="Texture2D" uid="uid://bqwksmaojlo66" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Fire Effect/5.png" id="12_qhjev"]
+[ext_resource type="Texture2D" uid="uid://bpsnav4y60q8c" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Idle/1.png" id="13_ax27f"]
+[ext_resource type="Texture2D" uid="uid://b74eob3v1cqgm" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Destroyed/1.png" id="14_svcpx"]
+[ext_resource type="Texture2D" uid="uid://c77nlafcjoyd5" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/1.png" id="15_yr06e"]
+[ext_resource type="Texture2D" uid="uid://bew7d5wsvchmb" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/2.png" id="16_k0ap5"]
+[ext_resource type="Texture2D" uid="uid://vwo5u3kopg6i" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/3.png" id="17_rvvhl"]
+[ext_resource type="Texture2D" uid="uid://cya4ia0vpmtvv" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/4.png" id="18_3cs8p"]
+[ext_resource type="Texture2D" uid="uid://bckjlsukyikam" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/5.png" id="19_g5cn2"]
+[ext_resource type="Texture2D" uid="uid://bhped41qn3ixh" path="res://assest/Treasure Hunters/Shooter Traps/Sprites/Cannon/Cannon Ball Explosion/6.png" id="20_xxlvc"]
+[ext_resource type="AudioStream" uid="uid://djk8ra56fncm0" path="res://assest/sounds/ppgt4su8d2-cannon-sfx-0.mp3" id="22_jcq4b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cth6b"]
+size = Vector2(32, 21)
+
+[sub_resource type="Animation" id="Animation_f4qpc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cannon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_2mo7a")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("effect:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("effect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-21, -1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ball:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ball:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-23, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ball:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.705882, 0.625)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("effect:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.526731, 0.479392)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("effect cannon:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("effect cannon:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("effect cannon:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_og7kb"]
+resource_name = "ball fire"
+length = 1.32
+loop_mode = 1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ball:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333334, 0.808333, 0.9, 1, 1.1, 1.2, 1.29833, 1.3, 1.32),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2, 2, 1),
+"update": 1,
+"values": [null, ExtResource("13_ax27f"), ExtResource("13_ax27f"), ExtResource("13_ax27f"), ExtResource("13_ax27f"), ExtResource("13_ax27f"), ExtResource("13_ax27f"), ExtResource("14_svcpx"), null]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ball:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333334, 0.808333, 0.9, 1, 1.1, 1.2, 1.29833, 1.3, 1.32),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2, 2, 1),
+"update": 0,
+"values": [Vector2(-23, 0), Vector2(-23, 0), Vector2(-45, 3), Vector2(-118, 15), Vector2(-168, 38), Vector2(-200, 51), Vector2(-344, 131), Vector2(-216, 57), Vector2(-344, 131)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ball:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333334, 0.808333, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2),
+"update": 0,
+"values": [Vector2(0.705882, 0.625), Vector2(0.705882, 0.625), Vector2(0.705882, 0.625), Vector2(0.705882, 0.625), Vector2(0.705882, 0.625), Vector2(0.705882, 0.625), Vector2(0.705882, 0.625)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("effect:texture")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.733333, 0.808333, 0.9, 1, 1.1, 1.2, 1.3, 1.32),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2, 1),
+"update": 1,
+"values": [null, ExtResource("15_yr06e"), ExtResource("16_k0ap5"), ExtResource("17_rvvhl"), ExtResource("18_3cs8p"), ExtResource("19_g5cn2"), ExtResource("20_xxlvc"), null]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("effect:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.733333, 0.808333, 0.9, 1, 1.1, 1.2, 1.29833, 1.32),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2, 1),
+"update": 0,
+"values": [Vector2(-21, -1), Vector2(-21, -1), Vector2(-44, 4), Vector2(-121, 17), Vector2(-167, 39), Vector2(-210, 55), Vector2(-344, 131), Vector2(-344, 131)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("effect:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.733333, 0.808333, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2),
+"update": 0,
+"values": [Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392), Vector2(0.526731, 0.479392)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("effect:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.733333, 0.808333, 0.9, 1, 1.1, 1.2, 1.30833),
+"transitions": PackedFloat32Array(1, 2, 1, 1, 1, 1, 2),
+"update": 0,
+"values": [0.0, 0.0, 1.44202, 1.29689, 1.24417, 1.24417, 1.24417]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("cannon:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.266667, 0.4, 0.566667, 0.733333, 0.9, 1, 1.06667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_2mo7a"), ExtResource("1_2mo7a"), ExtResource("2_6y1s1"), ExtResource("3_j1mic"), ExtResource("4_8qd5e"), ExtResource("5_wnpvh"), ExtResource("6_kyl3b"), ExtResource("7_5j2n2")]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("effect cannon:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.133333, 0.333333, 0.466667, 0.633333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-3.13749, -3.13749, -3.13749, -3.13749, -3.13749]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("effect cannon:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.133333, 0.333333, 0.466667, 0.633333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-14, -3.72529e-09), Vector2(-14, -3.72529e-09), Vector2(-19, -3.72529e-09), Vector2(-29, 3.72529e-09), Vector2(-31, 3.72529e-09)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("effect cannon:texture")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.333333, 0.466667, 0.633333, 0.8, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [null, ExtResource("8_wmols"), ExtResource("9_7nevt"), ExtResource("10_qk2b3"), ExtResource("11_hub4v"), ExtResource("12_qhjev"), null]
+}
+
+[sub_resource type="Animation" id="Animation_e8rb7"]
+resource_name = "dead"
+length = 0.3
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cannon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("2_w7nbd"), ExtResource("3_dklb6"), ExtResource("4_s50ip"), ExtResource("5_y044n")]
+}
+
+[sub_resource type="Animation" id="Animation_iiexd"]
+resource_name = "hit"
+length = 0.3
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cannon:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_kqd68"), ExtResource("7_vjctn"), ExtResource("8_nwxgn"), ExtResource("9_yw1le")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4pfcf"]
+_data = {
+"RESET": SubResource("Animation_f4qpc"),
+"ball fire": SubResource("Animation_og7kb"),
+"dead": SubResource("Animation_e8rb7"),
+"hit": SubResource("Animation_iiexd")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0w5ou"]
+radius = 5.66667
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7xiay"]
+size = Vector2(322, 232)
+
+[node name="cannon shoter" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 2
+collision_mask = 6
+script = ExtResource("1_crrjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 2.5)
+shape = SubResource("RectangleShape2D_cth6b")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4pfcf")
+}
+
+[node name="cannon" type="Sprite2D" parent="."]
+texture = ExtResource("1_2mo7a")
+
+[node name="effect cannon" type="Sprite2D" parent="."]
+
+[node name="effect" type="Sprite2D" parent="."]
+position = Vector2(-21, -1)
+scale = Vector2(0.526731, 0.479392)
+
+[node name="ball" type="Sprite2D" parent="."]
+position = Vector2(-23, 0)
+scale = Vector2(0.705882, 0.625)
+
+[node name="Area2D" type="Area2D" parent="ball"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ball/Area2D"]
+shape = SubResource("CircleShape2D_0w5ou")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+
+[node name="input" type="Area2D" parent="."]
+position = Vector2(-283, 1)
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="input"]
+position = Vector2(139, 19)
+shape = SubResource("RectangleShape2D_7xiay")
+
+[node name="CannonSound" type="AudioStreamPlayer2D" parent="."]
+visible = false
+stream = ExtResource("22_jcq4b")
+volume_db = -15.0
+pitch_scale = 2.0
+
+[connection signal="body_entered" from="ball/Area2D" to="." method="_on_ball_damage_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="input" to="." method="_on_start_animation_entered"]
+[connection signal="body_exited" from="input" to="." method="_off_animation_exited"]

@@ -1,0 +1,11 @@
+~ solo7of
+??? : Hi 
+YOU : Who are you
+SELLER : Im the seller
+YOU : Okey??
+SELLER : Do you want to buy 
+- YES
+	okay PRESSED (T)
+- NO
+	Okay see you later
+=> END

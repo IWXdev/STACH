@@ -1,0 +1,718 @@
+[gd_scene load_steps=42 format=3 uid="uid://b2t82ollrqcv0"]
+
+[ext_resource type="FontFile" uid="uid://dg8i3q1u2bwsy" path="res://assest/fonts/04B_30__.TTF" id="1_0w7bm"]
+[ext_resource type="Script" path="res://scripts/shop.gd" id="1_i7vf4"]
+[ext_resource type="FontFile" uid="uid://dibsqk3ok33rn" path="res://assest/fonts/Vermin Vibes 1989.ttf" id="2_6k8jy"]
+[ext_resource type="Texture2D" uid="uid://6yafs34ve423" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/01.png" id="4_p623u"]
+[ext_resource type="Texture2D" uid="uid://cdt0gi14dugdw" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/01.png" id="4_pyy24"]
+[ext_resource type="Texture2D" uid="uid://dxjqt3a1bg2tg" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/02.png" id="5_2llh6"]
+[ext_resource type="Texture2D" uid="uid://dgbkhpyy6eh0s" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/02.png" id="5_ic72q"]
+[ext_resource type="Texture2D" uid="uid://c11aimb0v4gl6" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/03.png" id="6_31rk8"]
+[ext_resource type="Texture2D" uid="uid://bxaliqddlgtkq" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/03.png" id="6_judx2"]
+[ext_resource type="Texture2D" uid="uid://c1oqfhtgq5ret" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/04.png" id="7_7tdgu"]
+[ext_resource type="Texture2D" uid="uid://1kl77y126wej" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/04.png" id="7_b8lyt"]
+[ext_resource type="Texture2D" uid="uid://j7407sq2qnae" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/05.png" id="8_0ocgh"]
+[ext_resource type="Texture2D" uid="uid://ddan878bijvkh" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/05.png" id="8_84fak"]
+[ext_resource type="Texture2D" uid="uid://6cc2ytco11fd" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/06.png" id="9_mqpwd"]
+[ext_resource type="Texture2D" uid="uid://ck6b6ux02qigp" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/06.png" id="9_wi4ki"]
+[ext_resource type="Texture2D" uid="uid://df1kkjoe3u1sx" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Blue Potion/07.png" id="10_i5ajn"]
+[ext_resource type="Texture2D" uid="uid://c1eo1e8x4qgw" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Red Potion/07.png" id="10_iw0b1"]
+[ext_resource type="Texture2D" uid="uid://sy5fwao0ggjx" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/01.png" id="18_e4w8q"]
+[ext_resource type="Texture2D" uid="uid://bowohphlmhgq1" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/02.png" id="19_11q0n"]
+[ext_resource type="Texture2D" uid="uid://cjgtvyqqyb35u" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/03.png" id="20_wgtnk"]
+[ext_resource type="Texture2D" uid="uid://6hsyvnjsqvjd" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/04.png" id="21_m23vw"]
+[ext_resource type="Texture2D" uid="uid://tw22egqsg3s7" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/05.png" id="22_i5qfm"]
+[ext_resource type="Texture2D" uid="uid://b4w5if40mqbx4" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/06.png" id="23_x3e2s"]
+[ext_resource type="Texture2D" uid="uid://baj6803g2lmfh" path="res://assest/Treasure Hunters/Pirate Treasure/Sprites/Green Bottle/07.png" id="24_q1d2l"]
+[ext_resource type="FontFile" uid="uid://bkrws6rytsjd" path="res://assest/fonts/fonts/Splatch.ttf" id="25_sywst"]
+
+[sub_resource type="Animation" id="Animation_3qlgp"]
+resource_name = "Inlod"
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(677, 401)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(237.5, 123.5), Vector2(621.5, 339.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/close:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(542.5, 14.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/close:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(112, 38)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("coin:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(260, 150), Vector2(650, 369)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("coin:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/close:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.02, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Control:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Control:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(278, 173), Vector2(674, 408)]
+}
+
+[sub_resource type="Animation" id="Animation_axy38"]
+resource_name = "Outlod"
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(677, 401), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.02, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(621.5, 339.5), Vector2(237.5, 123.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/close:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.02),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(542.5, 14.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("coin:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.02, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panel/close:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.02),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(86, 38)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panel/close:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.02, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Control:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.02, 0.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_dkclu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(237.5, 123.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel/close:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panel/close:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(86, 25)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("coin:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(260, 150)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("coin:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Panel/close:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Control:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Control:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(674, 408)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_os6wp"]
+_data = {
+"Inlod": SubResource("Animation_3qlgp"),
+"Outlod": SubResource("Animation_axy38"),
+"RESET": SubResource("Animation_dkclu")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtpcu"]
+bg_color = Color(0.305882, 0.337255, 0.32549, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d30s"]
+bg_color = Color(0.920995, 0.920995, 0.920995, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_or3yt"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlaum"]
+bg_color = Color(0.885638, 0, 0.184239, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_yerrq"]
+
+[sub_resource type="GDScript" id="GDScript_scfll"]
+script/source = "extends Label
+
+
+func _process(delta) -> void:
+	text = \"COIN :\" + str(Global.coin)
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_plxaj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_p623u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ic72q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_judx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7tdgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0ocgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mqpwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i5ajn")
+}],
+"loop": true,
+"name": &"Blue Potion",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pyy24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2llh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_31rk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b8lyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_84fak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wi4ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iw0b1")
+}],
+"loop": true,
+"name": &"HP",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_e4w8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_11q0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wgtnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_m23vw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_i5qfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_x3e2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_q1d2l")
+}],
+"loop": true,
+"name": &"green bottle",
+"speed": 6.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ip62l"]
+bg_color = Color(0.363548, 0.656619, 0.670482, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukhth"]
+bg_color = Color(0.364706, 0.658824, 0.670588, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d35v7"]
+bg_color = Color(0.144063, 0.144063, 0.144062, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+expand_margin_left = 15.0
+expand_margin_top = 15.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6gcmj"]
+bg_color = Color(0.864675, 0.864675, 0.864675, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+expand_margin_left = 15.0
+expand_margin_top = 15.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jc4mn"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="shop" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_i7vf4")
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_os6wp")
+}
+speed_scale = 5.0
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -722.5
+offset_top = -416.5
+offset_right = -722.5
+offset_bottom = -416.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_dtpcu")
+
+[node name="close" type="Button" parent="Panel"]
+visible = false
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 542.5
+offset_top = 14.5
+offset_right = 654.5
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_0w7bm")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxFlat_4d30s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_or3yt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wlaum")
+text = "close"
+
+[node name="coin" type="Label" parent="."]
+visible = false
+texture_filter = 1
+offset_left = 260.0
+offset_top = 150.0
+offset_right = 297.0
+offset_bottom = 164.0
+scale = Vector2(1.39831, 1.44084)
+theme_override_colors/font_color = Color(0.976157, 0.793028, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_6k8jy")
+theme_override_font_sizes/font_size = 30
+text = "COIN : 
+"
+label_settings = SubResource("LabelSettings_yerrq")
+script = SubResource("GDScript_scfll")
+
+[node name="Control" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 278.0
+offset_top = 173.0
+offset_right = 854.0
+offset_bottom = 480.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(283, 94)
+scale = Vector2(7.79161, 6.52517)
+sprite_frames = SubResource("SpriteFrames_plxaj")
+animation = &"HP"
+
+[node name="name" type="Label" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -25.0
+offset_top = -9.0
+offset_right = 15.0
+offset_bottom = 36.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("25_sywst")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_ip62l")
+
+[node name="des" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -101.0
+offset_right = 35.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("25_sywst")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_ukhth")
+
+[node name="next" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 102.0
+offset_right = 457.0
+offset_bottom = 244.0
+scale = Vector2(0.408021, 0.265572)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("1_0w7bm")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/hover = SubResource("StyleBoxFlat_d35v7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6gcmj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jc4mn")
+text = ">"
+
+[node name="back" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 102.0
+offset_right = 233.0
+offset_bottom = 244.0
+scale = Vector2(0.408021, 0.265572)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("1_0w7bm")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/hover = SubResource("StyleBoxFlat_d35v7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6gcmj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jc4mn")
+text = "<"
+
+[node name="buy" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 262.0
+offset_right = 514.0
+offset_bottom = 404.0
+scale = Vector2(0.408021, 0.265572)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("1_0w7bm")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/hover = SubResource("StyleBoxFlat_d35v7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6gcmj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jc4mn")
+text = "BUY"
+
+[connection signal="pressed" from="Panel/close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Control/next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Control/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Control/buy" to="." method="_on_buy_pressed"]

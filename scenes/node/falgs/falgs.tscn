@@ -1,0 +1,53 @@
+[gd_scene load_steps=11 format=3 uid="uid://c70e32ivwsj6"]
+
+[ext_resource type="Texture2D" uid="uid://cf7jj5sedh4e4" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_fcb7s"]
+[ext_resource type="Texture2D" uid="uid://dk5impn4nudmy" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_g8phe"]
+[ext_resource type="Texture2D" uid="uid://dwbye617t6csa" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_4qtcj"]
+[ext_resource type="Texture2D" uid="uid://cfto8o5bwtrke" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_q1j1t"]
+[ext_resource type="Texture2D" uid="uid://jhh80e76nyqc" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_skvil"]
+[ext_resource type="Texture2D" uid="uid://dyr4cplx3s4g8" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_rnhjy"]
+[ext_resource type="Texture2D" uid="uid://ktd78w3yp7ad" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_x60qx"]
+[ext_resource type="Texture2D" uid="uid://b46l56m6ck1k4" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_g20nl"]
+[ext_resource type="Texture2D" uid="uid://bks5txyvs33kd" path="res://assest/Treasure Hunters/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_dwlsc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x2a6q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fcb7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g8phe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4qtcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q1j1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_skvil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rnhjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x60qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g20nl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dwlsc")
+}],
+"loop": true,
+"name": &"falg",
+"speed": 12.0
+}]
+
+[node name="falgs" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_x2a6q")
+animation = &"falg"
+autoplay = "falg"
+frame = 2
+frame_progress = 0.827617

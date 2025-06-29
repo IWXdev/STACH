@@ -1,0 +1,192 @@
+[gd_scene load_steps=16 format=3 uid="uid://bbc07ls8h1xdn"]
+
+[ext_resource type="Texture2D" uid="uid://d1e1osbsu0icb" path="res://assest/Wizard/Wizard/Idle/Wizard5.png" id="1_43dpp"]
+[ext_resource type="Script" path="res://scenes/node/seller/seller.gd" id="1_f85bp"]
+[ext_resource type="Texture2D" uid="uid://dap0i64k621it" path="res://assest/Wizard/Wizard/Idle/Wizard6.png" id="2_r4o6j"]
+[ext_resource type="Texture2D" uid="uid://fj6q2megmdxa" path="res://assest/Wizard/Wizard/Idle/Wizard7.png" id="3_s8uca"]
+[ext_resource type="Texture2D" uid="uid://ve8nj3od84bp" path="res://assest/Wizard/Wizard/Idle/Wizard8.png" id="4_krx7o"]
+[ext_resource type="Texture2D" uid="uid://b3ww2gckvoi3r" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 01.png" id="5_6f7a5"]
+[ext_resource type="Texture2D" uid="uid://ef0jckfobc3d" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 03.png" id="6_prnd1"]
+[ext_resource type="Texture2D" uid="uid://dff5bfh7hjlwk" path="res://assest/Treasure Hunters/Captain Clown Nose/Sprites/Dialogue/Interrogation/Interrogation In 02.png" id="7_prvw5"]
+[ext_resource type="Texture2D" uid="uid://b0eanbdtc7d57" path="res://assest/Treasure Hunters/Wood and Paper UI/Sprites/Big Text/6.png" id="8_sjuts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2ef1"]
+size = Vector2(20, 29)
+
+[sub_resource type="Animation" id="Animation_mi2kh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ghost:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_43dpp")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pp:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_6f7a5")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pp:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -19)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pp:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.7, 0.7)]
+}
+
+[sub_resource type="Animation" id="Animation_s23ni"]
+resource_name = "idel"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ghost:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_43dpp"), ExtResource("2_r4o6j"), ExtResource("3_s8uca"), ExtResource("4_krx7o")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pp:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_6f7a5"), ExtResource("6_prnd1"), ExtResource("7_prvw5"), ExtResource("5_6f7a5")]
+}
+
+[sub_resource type="Animation" id="Animation_8bdm5"]
+resource_name = "idel_on_area"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ghost:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_43dpp"), ExtResource("2_r4o6j"), ExtResource("3_s8uca"), ExtResource("4_krx7o")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("pp:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("8_sjuts"), ExtResource("8_sjuts")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("pp:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.433333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -18), Vector2(0, -20)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("pp:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.7, 0.7), Vector2(0.7, 0.7)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vgcvl"]
+_data = {
+"RESET": SubResource("Animation_mi2kh"),
+"idel": SubResource("Animation_s23ni"),
+"idel_on_area": SubResource("Animation_8bdm5")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lw4yp"]
+size = Vector2(67, 29)
+
+[node name="seller" type="CharacterBody2D"]
+script = ExtResource("1_f85bp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_j2ef1")
+
+[node name="ghost" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(-1, 1)
+texture = ExtResource("1_43dpp")
+
+[node name="pp" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -19)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_6f7a5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vgcvl")
+}
+autoplay = "idel"
+speed_scale = 1.3
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-13.5, 1.5)
+shape = SubResource("RectangleShape2D_lw4yp")
+debug_color = Color(0.773595, 0, 0.188532, 0.42)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_zoon_seller_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

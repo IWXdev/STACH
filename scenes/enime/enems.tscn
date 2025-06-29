@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://4q5eqiw28g52"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_leg0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02tnd"]
+
+[node name="enemy" type="Node2D"]
+
+[node name="right" type="StaticBody2D" parent="."]
+position = Vector2(166, 0)
+scale = Vector2(0.846391, 7.25812)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right"]
+shape = SubResource("RectangleShape2D_leg0e")
+
+[node name="lift" type="StaticBody2D" parent="."]
+position = Vector2(-120, 0)
+scale = Vector2(0.799999, 7.36)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lift"]
+shape = SubResource("RectangleShape2D_02tnd")

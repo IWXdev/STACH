@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ce4y2hd058jax"
+path="res://.godot/imported/zombie main music.ogg-de4314303a0db09ae76407d08cdab214.oggvorbisstr"
+
+[deps]
+
+source_file="res://assest/sounds/zombie main music.ogg"
+dest_files=["res://.godot/imported/zombie main music.ogg-de4314303a0db09ae76407d08cdab214.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
